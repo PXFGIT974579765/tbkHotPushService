@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+validator.Checked=WebRoot/easyui/easyui/js/locale/easyui-lang-zh_TW.js,WebRoot/easyui/jquery-easyui-1.5/locale/easyui-lang-zh_TW.js,WebRoot/easyui/jquery-easyui-1.5/locale/easyui-lang-zh_CN.js,WebRoot/easyui/jquery-easyui-1.5/jquery.min.js,WebRoot/js/jquery-1.8.0.min.js,WebRoot/easyui/jquery-easyui-1.5/locale/easyui-lang-ko.js,WebRoot/js/jquery-1.7.1.min.js,WebRoot/easyui/jquery-easyui-1.5/locale/easyui-lang-jp.js,WebRoot/easyui/jquery-easyui-1.5/locale/easyui-lang-cz.js,WebRoot/easyui/easyui/js/locale/easyui-lang-zh_CN.js,WebRoot/js/jquery-1.7.2.min.js,WebRoot/easyui/easyui/js/jquery-1.7.2.min.js
+validator.Revalidate=true
+validator.Unchecked=

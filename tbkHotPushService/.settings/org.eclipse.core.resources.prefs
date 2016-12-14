@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//WebRoot/WEB-INF/jsp/common/include.jsp=UTF-8
+encoding//WebRoot/WEB-INF/jsp/user/success.jsp=UTF-8
+encoding//WebRoot/index.jsp=UTF-8
+encoding//WebRoot/js/jquery-1.7.1.min.js=UTF-8
+encoding//WebRoot/js/jquery-1.7.2.min.js=UTF-8
+encoding//WebRoot/js/jquery-1.8.0.min.js=UTF-8
+encoding//src/com/pxf/first/frame/controller/order/controller/OrderController.java=UTF-8
+encoding//src/com/pxf/first/frame/controller/user/controller/UserController.java=UTF-8
+encoding/<project>=UTF-8

@@ -1,0 +1,87 @@
+html{
+	background: #fff;
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background:#fff;
+	padding-right: 20px;
+}
+.content{
+	width:100%;
+	margin:5px 50px 5px 0px;
+	background:#fff;
+	border:none;
+	border-radius:3px;
+	padding: 0px 0px 0px 10px;
+	box-shadow:0px 0px 8px #9C9B94;
+	position: relative;
+}
+.error-box{
+	width: 200px;
+border: 1px solid;
+height: 100px;
+position: relative;
+top: 0px;
+left: 50%;
+margin-left: -100;
+}
+.content-up{
+	width: 98%;
+	margin-top:20px;
+	padding-left:10px;
+}
+.content-bottom{
+	width: 98%;
+	margin-top: 15px;
+	padding-left: 0px;
+	margin-left:0px;
+	position: relative;
+}
+.list-box-bar{
+	position:relative;
+	background:#06b5ff;
+	width:100%;
+	height:35px;
+	z-index:8;
+	border-radius:3px 3px 0 0;
+}
+.list-box-bar-title{
+	height:30px;
+	line-height:30px;
+	position:relative;
+	left:10px;
+	color:#fff;
+}
+.list-box-bar-icon-close{
+	color:#fff;
+	height:30px;
+	line-height:30px;
+	position:absolute;
+	right:5px;
+	cursor:pointer;
+	z-index:99999;
+}
+i {color: red}
+.col{display:inline-block;position:relative; width: 370px;height: 30px;line-height: 30px;margin-top: 5px;margin-bottom: 10px;}
+.col span{display: inline-block;width: 80px;height: 30px;line-height: 30px;text-align: right}
+.col input{display: inline-block;margin-left: 0px;width:250px;height: 25px;line-height: 25px;padding-left: 10px;}
+.col select{display: inline-block;margin-left: 0px;width:250px;height: 25px;line-height: 25px;}
+.title{width:98%; margin:0 auto; border-bottom:1px solid #4a6e79;height:10px;text-align: center;}
+.title span{padding:0px 10px; border:1px solid #4a6e79; border-top: none; border-bottom:none; background:#fff;cursor:pointer;margin-right:20px; position: relative; top: 0px; font:16px "microsoft yahei"; color: #06b5ff;}
+.title1{width:101%; margin:0px;height:24px;text-align: center;left: -12px;position: relative;background: #D5E4F2;}
+.title1 span{padding:0px 10px;left: -5px; border-top: none; border-bottom:none;cursor:pointer;margin-right:20px; position: relative; top: 0px; font:14px "microsoft yahei"; color: #4b658d;;}
+.colspan{width: 100%;display: inline-block;position: relative; margin-bottom: 36px;height: 60px;line-height: 60px;margin-left: 28px;}
+.colspan span{height: 25px;line-height: 25px;vertical-align: top;display: inline-block;text-align: right;}
+.colspan textarea{width: 88%;resize:none; display: inline-block;color:grey;padding-left: 10px;padding-top: 5px;}
+
+.title span:hover{padding:0px 10px; border:1px solid #4a6e79; border-top: none; border-bottom:none; background:#fff;cursor:pointer;margin-right:20px; position: relative; top: 0px; font:16px "microsoft yahei"; color: #000;}
+.content-list{width: 98%;margin-left: 20px;position: relative;}
+.list-box{position:relative;display:inline-block;margin-top: 10px;margin-left: 5px;float: left; background:#fff;box-shadow: 0 0 7px rgba(0,0,0,.3);border-radius:3px;width: 260px; }
+.list-box  ul{padding:0 20px;list-style-type:none}
+.list-box  ul li{ height:30px; line-height:30px; border-top: 1px dashed #EDEDED;}
+.list-box  ul li span{ display:inline-block; width:50px; text-align:left;}
+.list-box  ul li i{ font-style:normal; margin-left:10px;}
+.list-box  ul li small{ color:red;}
+.list-box  ul li input{ font-style:normal; margin-left:10px;padding-left:10px;width:160px;padding:5px;border-radius:3px;}
+.list-box  ul li input[readonly]{ font-style:normal; margin-left:10px;padding-left:10px;width:160px;padding:5px;border-radius:3px;border:none;background:#fff;color:#000;}

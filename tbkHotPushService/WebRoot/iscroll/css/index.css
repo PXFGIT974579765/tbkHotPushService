@@ -1,0 +1,680 @@
+html{
+    background-color: #fff;
+}
+body
+{
+    background-color: #fff;
+    position: relative;
+}
+body *
+{
+    text-shadow: none;
+}
+nav:not(.mm-menu)
+{
+    display: none;
+}
+.header{
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 1.5625rem;
+    padding: 0 0.234375rem;
+    background-color: #fff;
+}
+.header.fixed
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.loimg{
+    width: 4.9375rem;
+    height:1.375rem;
+    margin-top: 0.109375rem;
+}
+
+.navicon{
+    background-image: url(../images/navimg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: left center;
+    display: block;
+    width: 0.8125rem;
+    height: 0.8125rem;
+    position: absolute;
+    top: 0.234375rem;
+    right: 0.390625rem;
+}
+
+/*slide*/
+.focus{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+.focus .hd{
+    width: 100%;
+    height: 0.3rem;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    border-bottom: 1px solid #d2d2d2;
+}
+.focus .hd ul {
+    display: inline-block;
+    height: 0.3rem;
+}
+.focus .hd ul li {
+    display: inline-block;
+    width: 0.25rem;
+    height: 0.25rem;
+    text-indent: -444rem;
+    background: rgba(0, 0, 0, 1);
+    margin: 0 0.1rem;
+    vertical-align: top;
+    overflow: hidden;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.focus .hd ul .on {
+    background: #3e5ba1;
+}
+.focus .bd {
+    position: relative;
+    z-index: 0;
+}
+.focus .bd li {
+    height: auto;
+    overflow: hidden;
+}
+.focus .bd li a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.focus .bd li a img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+/*slide end*/
+/*list-imgone*/
+.list-img{
+
+}
+.list-imgone{
+    display: table;
+    width: 100%;
+    text-align: center;
+}
+.list-imgone a{
+    display: table-cell;
+    font-size: 0.4375rem;
+    color: #333;
+}
+.list-imgone a img{
+    width: 1.703125rem;
+    height: 1.6875rem;
+}
+.list-imgone a span{
+    display: block;
+    line-height: 1rem;
+
+}
+.list-imgone:first-child{
+    margin-bottom:0.59375rem ;
+}
+/*list-imgone end*/
+/*indeximg*/
+.indeximg{
+}
+.indeximg a{
+    display: inline-block;
+    width: 4.453125rem;
+    border: 1px solid #dedede;
+    text-align: center;
+    padding: 0.625rem 0;
+}
+.indeximg a:first-child{
+    margin-right: 0.21rem;
+}
+.indeximg a img{
+    width: 3.75rem;
+    height: 4.921875rem;
+}
+/*indeximg end*/
+/*导师*/
+.wmtitle{
+    font-size: 0.5625rem;
+    color: #0e3289;
+    height: 1.015625rem;
+    line-height: 1.015625rem;
+    position: relative;
+    font-weight: 700;
+}
+.dstitline{
+    color: #333333;
+    border-bottom: 3px solid #0e3289;
+    padding-bottom: 0.15625rem;
+}
+.dsmore{
+    position: absolute;
+    top: 0.03rem;
+    right:0;
+    font-size:0.46875rem;
+    font-weight: normal;
+    color: #cccccc;
+}
+/*导师列表*/
+.prolist{
+    overflow: hidden;
+}
+.prolist ul{
+    margin-right: -0.55rem;
+}
+.prolist ul li{
+    text-align: center;
+    float: left;
+    width: 4.4rem;
+    margin-right: 0.54rem;
+    margin-top: 0.3125rem;
+    margin-bottom: 0.3125rem;
+}
+.prolist ul li img{
+    width: 4.4rem;
+    height: auto;
+}
+.prspan{
+    font-size: 0.4375rem;
+    color: #666666;
+    display: block;
+    line-height: 0.484375rem;
+    padding: 0.234375rem 0;
+}
+/*导师列表 end*/
+/*导师 end*/
+/*上课环境*/
+.inslide{
+    
+}
+/*上课环境 end*/
+/*四大优势*/
+.sdystitle{
+    font-size: 0.5rem;
+    color: #222222;
+    line-height: 0.390625rem;
+    font-weight: 700;
+}
+.sdysicon{
+    width: 0.984375rem;
+    height: 0.390625rem;
+    margin-left: 0.234375rem ;
+}
+.sdyscont{
+   display: table;
+    width: 100%;
+    text-align: center;
+}
+.sdyscont a{
+    display: table-cell;
+    background-image: url("../images/sicon5.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size:contain;
+}
+.sdyscont a:last-child{
+    background-image: none;
+}
+.sdyscont a img{
+    width: 3.515625rem;
+}
+.sdytit{
+    display: block;
+    font-size:  0.390625rem;
+    color: #222222;
+    font-weight: 500;
+    line-height: 0.78125rem;
+    margin: 0.390625rem 0;
+}
+/*四大优势 end*/
+/*学院动态*/
+.xydtli{
+
+}
+.xydtli ul li{
+    padding: 0.3125rem 0;
+    border-bottom: 1px dashed #bababa;
+}
+.dyh3{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    font-size: 0.375rem;
+    color: #666666;
+    line-height: 0.515625rem;
+}
+.dycont{
+    font-size: 0.3125rem;
+    color: #999999;
+    line-height: 0.515625rem;
+}
+/*学院动态 end*/
+/*知识解答*/
+.zstli{
+
+}
+.zstli ul li{
+    padding: 0.3125rem 0;
+    border-bottom: 1px solid #cecece;
+}
+.zsh3{
+    font-size: 0.375rem;
+    color: #333333;
+    line-height: 0.625rem;
+    background-image: url("../images/zsicon.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size:inherit;
+    box-sizing: border-box;
+    padding-left: 0.46875rem;
+}
+.zscont{
+    font-size: 0.3125rem;
+    color: #999999;
+    line-height: 0.578125rem;
+}
+/*知识解答end*/
+/*footer*/
+.footer{
+    background-color: #3c3b39;
+}
+.chlicontwo{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -o-box;
+    display: box;
+    padding-top: 0.546875rem;
+    padding-bottom:0.390625rem;
+}
+.chlisp{
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    width: 2.65625rem;
+    height: 2.609375rem;
+    margin-right: 0.546875rem;
+}
+.crimg{
+    width: 2.65625rem;
+    height: 2.609375rem;
+}
+.chliscontp{
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+}
+.chlih3{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    font-size: 0.375rem;
+    color: #999999;
+    line-height: 0.5625rem;
+}
+.chliconpt{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.3125rem;
+    color: #999999;
+    line-height: 0.5625rem;
+}
+.footelin{
+    border-top: 1px solid #707070;
+    text-align: center;
+    padding: 0.390625rem 0;
+    color: #999999;
+}
+.footelin p{
+    line-height: 0.46875rem;
+}
+/*footer end*/
+/*关于我们*/
+.about-top{
+    font-size: 0.25rem;
+    color: #999999;
+    line-height: 0.75rem;
+    border-bottom: 1px solid #eeeeee;
+    padding-top: 0.234375rem;
+    padding-bottom: 0.234375rem;
+    text-align: right;
+}
+.about-top a:nth-child(2){
+    color:#3d5aa0 ;
+}
+/*内容*/
+.dt-nyp img{
+    width: 100%;
+}
+.dt-nyp{
+    color: #333333;
+    line-height: 0.75rem;
+}
+[data-dpr="1"] .dt-nyp{
+    font-size: 17px;
+}
+[data-dpr="2"] .dt-nyp{
+    font-size: 29px;
+}
+[data-dpr="3"] .dt-nyp{
+    font-size: 45px;
+}
+/*内容end*/
+/*关于我们 end*/
+/*分页*/
+.page{
+    text-align: center;
+}
+.page a{
+    font-size: 0.28125rem;
+    color: #999999;
+    padding:0.15625rem  0.234375rem;
+    border: 1px solid #dcdcdc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin: 0 0.15625rem;
+}
+.paactive{
+    background-color: #0e3289;
+    color: #fff !important;
+}
+/*分页 end*/
+/*返回顶部*/
+.fhdiv{
+    position: fixed;
+    z-index: 10;
+    bottom: 3rem;
+    overflow: hidden;
+    width: 1rem;
+    text-align: center;
+    right: 0;
+}
+#scrollUp {
+
+}
+.blup{
+    width: 0.625rem;
+    height: 0.625rem;
+}
+/*返回顶部 end*/
+/*冠军导师*/
+.gjimg img{
+    width: 4.6875rem;
+    height: 6.71875rem;
+}
+/*冠军导师 end*/
+/*精彩视频*/
+.vidnyp{
+
+}
+.vidntop{
+    text-align: right;
+}
+.vidntop a{
+    font-size: 0.28125rem;
+    color: #0e3289;
+    padding:0.15625rem 0.234375rem;
+    border: 1px solid #0e3289;
+    margin-right:0.234375rem ;
+}
+.vidntop a:last-child{
+    margin-right: 0;
+}
+.viacive{
+    background-color:#0e3289;
+    color: #fff !important;
+}
+.vidcont{
+
+}
+.vidcont ul li{
+    width: 8.640625rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.vidcont ul li img{
+    width: 8.640625rem;
+    height: 6.28125rem;
+}
+.vidcont ul li span{
+    display: block;
+    font-size: 0.4375rem;
+    color: #666666;
+    line-height: 0.625rem;
+    margin: 0.359375rem 0;
+}
+/*精彩视频 end*/
+/*新闻内页*/
+.nwstop{
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.234375rem;
+    border-bottom: 1px solid #d2d2d2;
+}
+.nwsh3{
+    font-size: 0.4375rem;
+    color: #3e5ba1;
+    line-height: 0.5625rem;
+}
+.nwstime{
+    font-size: 0.3125rem;
+    color: #999999;
+    line-height: 0.75rem;
+}
+/*新闻内页 end*/
+/*上一页*/
+.nwssele a{
+    font-size: 0.3125rem;
+    color: #666666;
+    line-height: 0.5625rem;
+}
+/*上一页 end*/
+/*联系我们*/
+.lxwidth{
+    width:0.40625rem;
+    text-align: center;
+    display: block;
+    float: left;
+    margin-right:0.234375rem;
+}
+.coicon1{
+    width: 0.3125rem;
+    height: 0.40625rem;
+    vertical-align: text-top;
+}
+.coicon2{
+    width: 0.3125rem;
+    height: 0.40625rem;
+    vertical-align: text-top;
+}
+.coicon3{
+    width:0.40625rem;
+    height: 0.40625rem;
+    vertical-align: text-top;
+}
+.coicon4{
+    width: 0.375rem;
+    height: 0.296875rem;
+    vertical-align: text-top;
+}
+/*联系我们 end*/
+/*首页新加列表*/
+.hot-content{
+
+}
+.hot-content ul li{
+    /*height: 4.0625rem;*/
+    padding-top: 0.05rem;
+    padding-bottom: 0.05rem;
+    /*border-bottom: 1px solid #dddddd;*/
+}
+.page-jj .hot-content ul li:last-child{
+    border-bottom: 0;
+}
+.hto-img{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -o-box;
+    display: box;
+    /*display: flex;*/
+
+}
+.hto-img-content{
+    width: 4.5rem;
+    height:3.15625rem;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+}
+.hto-img-content img{
+    width: 4.5rem;
+    height:3.15625rem;
+}
+.hto-p{
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex:1;
+
+}
+.hto-ph3{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -o-box;
+    display: box;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    color: #222;
+    font-weight: bold;
+    line-height: 0.59375rem;
+}
+.vipicon{
+    width: 0.375rem;
+    height: 0.375rem;
+    vertical-align: middle;
+    margin-left:0.15625rem;
+}
+.hto-title{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 0.625rem;
+    font-size: 0.375rem;
+    color: #666666;
+}
+.hto-titlead{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -o-box;
+    display: box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    font-size: 0.375rem;
+    color: #000;
+    line-height: 0.5625rem;
+}
+.hto-title3{
+    text-align: right;
+    padding-right: 0.1rem;
+}
+.adicon{
+    width: 0.640625rem;
+    height: 0.640625rem;
+}
+/*首页新加列表 end*/
+
+/*新修必导师团队*/
+.adprolist{
+    background-image: url("../images/adjsbj.png");
+    background-repeat: no-repeat;
+    background-size: 20% 100%;
+    background-position: center center;
+    /*width: 100%;*/
+    margin: 0.625rem 0;
+
+}
+.adprolist ul li{
+    float: left;
+    width: 40%;
+    text-align: center;
+    margin-bottom: 0.225rem;
+    margin-top: 0.325rem;
+}
+.adprolist ul  li:nth-child(odd){
+    /*margin-right: 1.87537725rem;*/
+}
+.adprolist ul  li:nth-child(odd) img{
+
+}
+.adprolist ul  li:nth-child(even){
+    margin-left: 1.87537725rem;
+}
+.adprolist ul  li:nth-child(even) p{
+    padding-left: 0.2rem;
+}
+.adprolist ul li img{
+    width: 3.125rem;
+    height: 3.125rem;
+}
+.adjttitle{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -o-box;
+    display: box;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    font-size: 0.5625rem;
+    color: #000;
+    font-weight: 700;
+    line-height: 0.78125rem;
+}
+.addjp{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -o-box;
+    display: box;
+    -webkit-line-clamp:5;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    font-size: 0.375rem;
+    color: #000;
+    text-align: left;
+    line-height: 0.5625rem;
+    height: 2.8rem;
+}
+/*新修改导师团队 end*/

@@ -1,0 +1,12 @@
+.top-banner {
+			background-color: rgba(255, 255, 255, 0.55);
+		}
+		.top-banner a {
+			color: #019135;
+		}
+		h1 {
+			margin-top: 40px;
+			font-family: 'Microsoft Yahei';
+			font-size: 36px;
+			color: #019157;
+		}

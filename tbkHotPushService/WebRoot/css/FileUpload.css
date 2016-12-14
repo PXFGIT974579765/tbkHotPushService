@@ -1,0 +1,109 @@
+html{
+	background: #fff;
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background:#fff;
+	padding-right: 20px;
+}
+.content{
+	width:100%;
+	margin:5px 50px 5px 0px;
+	background:#fff;
+	border:none;
+	border-radius:3px;
+	padding: 0px 0px 0px 10px;
+	box-shadow:0px 0px 8px #9C9B94;
+	position: relative;
+}
+.error-box{
+	width: 200px;
+border: 1px solid;
+height: 100px;
+position: relative;
+top: 0px;
+left: 50%;
+margin-left: -100;
+}
+.content-up{
+	width: 98%;
+	margin-top:20px;
+	padding-left:10px;
+}
+.content-bottom{
+	width: 96%;
+	margin-top: 29px;
+	padding-left: 17px;
+	margin-left:0px;
+	position: relative;
+	bottom: 10px;
+	height: 40px;
+	line-height: 40px;
+	background: #DEDFEC;
+}
+.content-bottom a{
+	width: 98%;
+	margin-top: 15px;
+	padding-left: 0px;
+	margin-left:0px;
+	position: relative;
+	color: #0F12F0;
+}
+.list-box-bar{
+	position:relative;
+	background:#06b5ff;
+	width:100%;
+	height:35px;
+	z-index:8;
+	border-radius:3px 3px 0 0;
+}
+.list-box-bar-title{
+	height:30px;
+	line-height:30px;
+	position:relative;
+	left:10px;
+	color:#fff;
+}
+.list-box-bar-icon-close{
+	color:#fff;
+	height:30px;
+	line-height:30px;
+	position:absolute;
+	right:5px;
+	cursor:pointer;
+	z-index:99999;
+}
+i {color: red;}
+.col{display:inline-block;position:relative;height: 30px;line-height: 30px;margin-top: 5px;margin-bottom: 10px;background: #E2E1EF;margin-left: 9px;}
+.col lable{display: inline-block;white-space: nowrap;height: 30px;line-height: 30px;text-align: right}
+.col lable input[type="checkbox"]{display: inline-block;margin-left: 0px;width:16px;height: 25px;line-height: 25px;vertical-align: middle;}
+.col input[type="text"]{display: inline-block;margin-left: 0px;width:60px;height: 25px;line-height: 25px;}
+.title1{width:101%; margin:0px;height:24px;text-align: center;left: -12px;position: relative;background: #D5E4F2;}
+.title1 span{padding:0px 10px;left: -5px; border-top: none; border-bottom:none;cursor:pointer; position: relative; top: 0px; font:18px "microsoft yahei"; color: #4b658d;;}
+.colspan{width: 100%;display: inline-block;position: relative; margin-bottom: 36px;height: 60px;line-height: 60px;margin-left: 28px;}
+.colspan span{height: 25px;line-height: 25px;vertical-align: top;display: inline-block;text-align: right;}
+.colspan textarea{width: 88%;resize:none; display: inline-block;color:grey;padding-left: 10px;padding-top: 5px;}
+
+.content-list{width: 98%;margin-left: 20px;position: relative;}
+.title{width:98%; margin:0 auto;height:10px;text-align: center;margin-top: 39px;position: relative;bottom: 23px;}
+.title span{padding:0px 10px; border:1px solid #4a6e79; border-top: none; border-bottom:none; background:#7786d7;cursor:pointer;margin-right:20px; position: relative; top: 0px; font:16px "microsoft yahei"; color: #fff;}
+.title span:hover{padding:0px 10px; border:1px solid #4a6e79; border-top: none; border-bottom:none; background:#979dba;cursor:pointer;margin-right:20px; position: relative; top: 0px; font:16px "microsoft yahei"; color: #fff;}
+div[class^="content-item"]{padding-left: 7px;padding-top: 3px;}
+div[class^="content-item"] table{width:100%; border-collapse:collapse;margin-top: 11px;}
+div[class^="content-item"] table caption{text-align:left; border: 1px solid #5c8dad;border-bottom:none; background:#89b4c1;font: 16px/28px "microsoft yahei"; text-indent:10px; font-weight:400; color:#fff;}
+div[class^="content-item"] table tbody{}
+div[class^="content-item"] table caption div{display: inline-block;font: 14px/27px "microsoft yahei";background: #7E8765;;color: #fff;width: 48px;border: 1px solid darkgray;height: 23px;line-height: 23px;border-radius: 4px;cursor: pointer;}
+div[class^="content-item"] table caption input:hover{background:#55a2a7;}
+div[class^="content-item"] table td, div[class^="content-item"] table th{border: 1px solid #5c8dad;font: 14px/27px "microsoft yahei";}
+div[class^="content-item"] table td a{color: #1712ED;font: 14px/27px "microsoft yahei";cursor: pointer;}
+div[class^="content-item"] table td div[id="some-queue"]{display: inline-block;font: 14px/27px "microsoft yahei";color: #fff;text-align: center;line-height: 23px;border-radius: 4px;cursor: pointer;}
+div[class^="content-item"] table td div[class^="btn"]{display: inline-block;font: 14px/27px "microsoft yahei";background: #697EB9;color: #fff;width: 48px;text-align: center;border: 1px solid darkgray;height: 23px;line-height: 23px;border-radius: 4px;cursor: pointer;}
+div[class^="content-item"] table th{background: #deeeef; text-align:right; color:#25424b; font-weight:400;font: 14px/35px "microsoft yahei"; padding-right:10px; font-weight:bold;}
+div[class^="content-item"] table td input[type="text"]{width:85%; height:27px; border-radius:2px; border:1px solid #808080; background:#f5f7f8; margin-left:10px; text-indent:4px;}
+div[class^="content-item"] table td input[type="radio"]{margin-left:10px;}
+div[class^="content-item"] table td input[type="checkbox"]{margin-left:10px;}
+div[class^="content-item"] table th i{color:red;}
+div[class^="content-item"] table td[colspan="3"] input[type="text"]{width:94%; border-radius:2px; border:1px solid #808080; margin-left:10px; text-indent:4px;}
+div[class^="content-item"] table td select{width:85%; height:27px; margin-left:10px;background: #F6F9F7;border: 1px solid cadetblue; }
+div[class^="content-item"] table td textarea{width:93.5%; height:55px; margin:5px 0 5px 10px;border-radius:2px; border:1px solid #808080; background:#f5f7f8; text-indent:4px;resize: none;}

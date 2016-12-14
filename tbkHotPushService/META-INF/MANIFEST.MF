@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: edalquist
+Build-Jdk: 1.6.0_20
+Export-Package: com.googlecode.ehcache.annotations;version="1.1.0";use
+ s:="com.googlecode.ehcache.annotations.key,net.sf.ehcache",com.google
+ code.ehcache.annotations.key;version="1.1.0";uses:="org.aopalliance.i
+ ntercept,org.springframework.beans.factory,org.springframework.util"
+Bundle-Version: 1.1.0
+Tool: Bundlor 1.0.0.RELEASE
+Bundle-Name: Ehcache Spring Annotations
+Bundle-ManifestVersion: 2
+Import-Package: net.sf.ehcache;version="[2.0,3.0)",net.sf.ehcache.cons
+ tructs.blocking;version="[2.0,3.0)",org.aopalliance.intercept;version
+ ="[1.0,2.0)",org.apache.commons.codec.binary;version="[1.0,2.0)",org.
+ slf4j;version="[1.5,2.0)",org.springframework.aop.config;version="[2.
+ 5,4.0)",org.springframework.aop.support;version="[2.5,4.0)",org.sprin
+ gframework.beans;version="[2.5,4.0)",org.springframework.beans.factor
+ y;version="[2.5,4.0)",org.springframework.beans.factory.config;versio
+ n="[2.5,4.0)",org.springframework.beans.factory.support;version="[2.5
+ ,4.0)",org.springframework.beans.factory.xml;version="[2.5,4.0)",org.
+ springframework.core;version="[2.5,4.0)",org.springframework.util;ver
+ sion="[2.5,4.0)",org.w3c.dom;version="0";resolution:="optional"
+Bundle-SymbolicName: ehcache-spring-annotations
+
