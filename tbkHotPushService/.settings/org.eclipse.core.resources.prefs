@@ -1,5 +1,6 @@
 eclipse.preferences.version=1
 encoding//WebRoot/WEB-INF/jsp/common/include.jsp=UTF-8
+encoding//WebRoot/WEB-INF/jsp/order/MyJsp.jsp=UTF-8
 encoding//WebRoot/WEB-INF/jsp/user/success.jsp=UTF-8
 encoding//WebRoot/index.jsp=UTF-8
 encoding//WebRoot/js/jquery-1.7.1.min.js=UTF-8

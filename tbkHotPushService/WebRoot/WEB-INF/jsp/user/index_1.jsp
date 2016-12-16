@@ -82,12 +82,13 @@
 		$("#pageTotal").val(pageTotal);
 		$("#pageRows").val(pageRows);
 		$("#loading-mask").fadeIn();
+		 inputPrice();
 		 var url='<%=basePath%>user/loadProducts.do';
-		 $("#filterForm").attr('action',url);
-		 $("#filterForm").submit();
+		 $("#filterForm1").attr('action',url);
+		 $("#filterForm1").submit();
 		 $("#loading-mask").fadeOut();
 	}
-	function ajaxSubmit(){
+	function inputPrice(){
 		var priceF=$("#price_1").val()*1;
 		var priceT=$("#price_2").val()*1;
 		if(priceF>=priceT){
@@ -102,6 +103,9 @@
 			$("#price_2_2").val("");
 			$("#price_1_1").val("");
 		}
+	}
+	function ajaxSubmit(){
+		inputPrice();
 		queryByCondition(0,0,null);
 	}
 	function initAdPage(){
@@ -157,7 +161,7 @@
 		<a class="logo fl" href="<%=basePath%>"><img src="<%=basePath%>images/logo.png" data-bd-imgshare-binded="1"></a>
 		<div class="header-search">
 			<div class="search">
-			   <form method="post" action="" id="filterForm" name="filterForm"  >
+			   <form method="post" action="" id="filterForm1" name="filterForm1"  >
 			        <input type="hidden" id="price_1_1" class="text" name="priceF" />
 			        <input type="hidden" id="price_2_2"  class="text" name="priceT"/>
 				    <input type="hidden" name="currentPage" id="currentPage" value="${currentPage}">
@@ -243,7 +247,7 @@
 <div class="goods-list main-container direct_dft">
 		<ul class="clearfix">
 		<c:forEach items="${products}" var="product" varStatus="status">
-							<li class="goods-item">
+				<li class="goods-item">
 				<a href="${product.tbkUrl }" class="img" target="_blank">
 				<img src="${product.productImgUrl }">
 				</a>

@@ -1271,9 +1271,11 @@ html.mm-dropdown.mm-opened:not(.mm-opening) .mm-menu {
 }
 
 .mm-search {
-    height: 1.40625rem;
-    padding:0.234375rem  0.2rem;
-    position: relative
+    height: 1.2rem;
+    position: relative;
+    background: #23A3E9;
+    padding: 0.1rem 0.11rem;
+    padding-top: 0.1rem;
 }
 
 .mm-search input {
@@ -1283,7 +1285,7 @@ html.mm-dropdown.mm-opened:not(.mm-opening) .mm-menu {
     border-radius: 5px;
     display: inline-block;
     font-size: 0.4rem;
-    width: 84%;
+    width: 98%;
     margin: 0;
     padding: 0.25rem 1.2rem;
     box-sizing: border-box;
@@ -1292,11 +1294,12 @@ html.mm-dropdown.mm-opened:not(.mm-opening) .mm-menu {
     background-repeat: no-repeat !important;
     background-position: 95% center !important;
     cursor: pointer;
-	margin-left: -2.25rem;
 
 }
 .mm-search img{
-	
+	display: inline-block;
+	line-height: 0.77rem;
+	height: 0.77rem;
 }
 
 .mm-search input::-ms-clear {

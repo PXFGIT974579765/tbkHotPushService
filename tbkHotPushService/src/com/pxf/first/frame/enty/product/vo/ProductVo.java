@@ -39,9 +39,9 @@ public class ProductVo {
 	}
 	//分页用
 	//当前页
-	private int currentPage;
+	private String currentPage;
 	//每页条数
-	private int pageRows;
+	private String pageRows;
 	
 	
 	public ProductVo() {
@@ -58,16 +58,16 @@ public class ProductVo {
 		this.couponDetails=couponDetails;
 	}
 	
-	public int getCurrentPage() {
+	public String getCurrentPage() {
 		return currentPage;
 	}
-	public void setCurrentPage(int currentPage) {
+	public void setCurrentPage(String currentPage) {
 		this.currentPage = currentPage;
 	}
-	public int getPageRows() {
+	public String getPageRows() {
 		return pageRows;
 	}
-	public void setPageRows(int pageRows) {
+	public void setPageRows(String pageRows) {
 		this.pageRows = pageRows;
 	}
 	public String getCouponId() {

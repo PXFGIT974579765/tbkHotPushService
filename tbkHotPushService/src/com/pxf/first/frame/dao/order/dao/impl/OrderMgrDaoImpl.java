@@ -49,16 +49,16 @@ public class OrderMgrDaoImpl extends BaseDaoImpl implements IOrderMgrDao {
 			sb.append(" and cast(o.productPrice as integer) <:priceT ");
 			params.put("priceT", Integer.parseInt(vo.getPriceT().trim()));
 		}
-		if(vo.getPageRows()==0){
-			vo.setPageRows(PAGE_SIZE_DEFAULT);
+		if(StringUtils.isNullOrEmpty(vo.getPageRows())||"0".equals(vo.getPageRows())){
+			vo.setPageRows(PAGE_SIZE_DEFAULT+"");
 		}
-		if(vo.getCurrentPage()==0){
-			vo.setCurrentPage(CURRENT_PAGE_DEFAULT);
+		if(StringUtils.isNullOrEmpty(vo.getCurrentPage())||"0".equals(vo.getCurrentPage())){
+			vo.setCurrentPage(CURRENT_PAGE_DEFAULT+"");
 		}
 		page.setHql(sb.toString());
 		page.setParams(params);
-		page.setPageRows(vo.getPageRows());
-		page.setCurrentPage(vo.getCurrentPage());
+		page.setPageRows(Integer.parseInt(vo.getPageRows()+""));
+		page.setCurrentPage(Integer.parseInt(vo.getCurrentPage()+""));
 		page=queryWithPage(page);
 		return page;
 	}
