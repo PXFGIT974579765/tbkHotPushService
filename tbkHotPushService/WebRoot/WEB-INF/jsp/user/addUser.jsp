@@ -9,7 +9,7 @@
    <base href="<%=basePath%>">
    
   
-  <body>
+  <body>1
   <input type="hidden" value="" name="token" id="token">
     <div id="loading-mask" style="position:absolute;top:0px; left:0px; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:20000">
 <div id="pageloading" style="position:absolute; top:50%; left:50%; margin:-120px 0px 0px -120px; text-align:center; 
