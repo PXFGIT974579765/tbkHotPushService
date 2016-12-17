@@ -1,9 +1,7 @@
 package com.pxf.first.frame.controller.user.controller;
 
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,20 +10,16 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.JsonMappingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.mysql.jdbc.StringUtils;
 import com.pxf.first.frame.app.pager.Pager;
 import com.pxf.first.frame.app.result.model.ResultMsg;
-import com.pxf.first.frame.app.result.model.ResultStatusCode;
 import com.pxf.first.frame.controller.base.controller.BaseController;
 import com.pxf.first.frame.enty.product.vo.ProductVo;
 import com.pxf.first.frame.enty.user.bo.UserInfo;
@@ -70,7 +64,7 @@ public class UserController extends BaseController {
 		return map;
 	}
 	@RequestMapping(value = "/loadProducts.do")
-	public ModelAndView loadProducts(ProductVo vo,HttpServletRequest request) {
+	public ModelAndView loadProducts(String admin,ProductVo vo,HttpServletRequest request) {
 		LOG.info("查询商品 ");
 		ModelAndView map=new ModelAndView();
 		Pager page=this.orderService.queryUsersByConditionWithPage(vo);
@@ -83,6 +77,35 @@ public class UserController extends BaseController {
 		map.addObject("pageTotal", page.getPageTotal());
 		map.addObject("rowsTotal", page.getRowsTotal());
 		map.addObject("pageRows", page.getPageRows());
+		if("pxflmj".equals(admin)){
+			map.addObject("isAdmin", "yes");
+			map.addObject("admin", "pxflmj");
+		}else{
+			map.addObject("isAdmin", "no");
+		}
+		map.setViewName("user/index_1");
+		return map;
+	}
+	@RequestMapping(value = "/admin.do")
+	public ModelAndView admin(String admin,ProductVo vo,HttpServletRequest request) {
+		LOG.info("查询商品 ");
+		ModelAndView map=new ModelAndView();
+		Pager page=this.orderService.queryUsersByConditionWithPage(vo);
+		map.addObject("productName", vo.getProductName());
+		map.addObject("priceF", vo.getPriceF());
+		map.addObject("priceT", vo.getPriceT());
+		List<ProductVo> list=page.getList();
+		map.addObject("products", list);
+		map.addObject("currentPage", page.getCurrentPage());
+		map.addObject("pageTotal", page.getPageTotal());
+		map.addObject("rowsTotal", page.getRowsTotal());
+		map.addObject("pageRows", page.getPageRows());
+		if("pxflmj".equals(admin)){
+			map.addObject("isAdmin", "yes");
+			map.addObject("admin", "pxflmj");
+		}else{
+			map.addObject("isAdmin", "no");
+		}
 		map.setViewName("user/index_1");
 		return map;
 	}

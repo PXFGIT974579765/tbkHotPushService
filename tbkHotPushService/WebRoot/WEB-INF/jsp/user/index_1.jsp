@@ -168,6 +168,7 @@
                     <input type="hidden" name="pageTotal" id="pageTotal" value="${pageTotal }">
                     <input type="hidden" name="rowsTotal" id="rowsTotal" value="${rowsTotal }">
                     <input type="hidden" name="pageRows" id="pageRows" value="${pageRows}">
+                     <input type="hidden" name="admin" id="admin" value="${admin}">
 					<input autocomplete="off" placeholder="输入关键词" class="input_key js-query" id="kw" name="productName" value="${productName }" type="text">
 <!-- 					<input name="token" value="4nh71rca7olcffmsmdiurtm660" type="hidden"> -->
 					<button rel="search" type="button" onclick="ajaxSubmit();">搜索</button>
@@ -251,6 +252,9 @@
 				<a href="${product.tbkUrl }" class="img" target="_blank">
 				<img src="${product.productImgUrl }">
 				</a>
+				<c:if test="${isAdmin eq 'yes' }">
+				<div class="productIncome">${product.productIncome }</div>
+				</c:if>
 				<div class="padding">
 					<a target="_blank" href="${product.tbkUrl }" class="title clearfix">
 					<c:if test="${product.platCategory eq '天猫' }">
@@ -259,6 +263,7 @@
 					<c:if test="${product.platCategory eq '淘宝' }">
 					      <i class="taobao"></i>
 					</c:if>
+					
 					
 					<span>${product.productName }</span>
 					</a>

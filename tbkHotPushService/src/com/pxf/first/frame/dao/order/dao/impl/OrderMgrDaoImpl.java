@@ -34,7 +34,7 @@ public class OrderMgrDaoImpl extends BaseDaoImpl implements IOrderMgrDao {
 		StringBuffer sb=new StringBuffer();
 		Map<String , Object> params = new HashMap<String , Object>();
 		sb.append("select new com.pxf.first.frame.enty.product.vo.ProductVo( o.productImgUrl,o.tbkUrl, o.platCategory,");
-		sb.append("o.productName,o.couponTgUrl,o.productPrice,o.couponDetails");
+		sb.append("o.productName,o.couponTgUrl,o.productPrice,o.couponDetails,o.productIncome");
 		sb.append(") From ProductBo o where 1=1");
 		
 		if(!StringUtils.isNullOrEmpty(vo.getProductName())){

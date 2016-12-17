@@ -48,7 +48,7 @@ public class ProductVo {
 		// TODO Auto-generated constructor stub
 	}
 	public ProductVo(String productImgUrl,String tbkUrl,String platCategory,String productName,
-			String couponTgUrl,String productPrice,String couponDetails) {
+			String couponTgUrl,String productPrice,String couponDetails,String productIncome) {
 		this.productImgUrl=productImgUrl;
 		this.tbkUrl=tbkUrl;
 		this.platCategory=platCategory;
@@ -56,6 +56,7 @@ public class ProductVo {
 		this.couponTgUrl=couponTgUrl;
 		this.productPrice=productPrice;
 		this.couponDetails=couponDetails;
+		this.productIncome=productIncome;
 	}
 	
 	public String getCurrentPage() {
